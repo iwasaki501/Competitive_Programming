@@ -84,6 +84,12 @@ std::ostream& operator<<(std::ostream& os,
   return os << (first ? "{}" : "}");
 }
 
+template <class T>
+std::istream& operator>>(std::istream& is, std::vector<T>& vec) {
+  for (T& e : vec) is >> e;
+  return is;
+}
+
 #ifdef LOCAL
 #define debug(...) \
   std::cerr << "[" << #__VA_ARGS__ << "]: ", debug_out(__VA_ARGS__)
