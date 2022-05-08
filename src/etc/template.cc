@@ -14,6 +14,7 @@
 #include <set>
 #include <stack>
 #include <string>
+#include <unordered_map>
 #include <vector>
 
 // Acknowledgement: Special thanks to kyomukyomupurin, who developed this
